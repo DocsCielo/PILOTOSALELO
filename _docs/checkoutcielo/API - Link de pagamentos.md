@@ -21,9 +21,10 @@ Para acessá-la será necessário possuir:
 1. Clientd
 2. ClientSecret
 
-|PROPRIEDADE|DESCRIÇÃO|TIPO|
-|ClientId|Mesmo que o **MerchantId**|guid|
-|ClientSecret|Chave secreta que deverá ser obtida junto à Cielo|string|
+| PROPRIEDADE  | DESCRIÇÃO                                         | TIPO   |
+|--------------|---------------------------------------------------|--------|
+| ClientId     | Mesmo que o **MerchantId**                        | guid   |
+| ClientSecret | Chave secreta que deverá ser obtida junto à Cielo | string |
 
 Para obter acesso aos serviços da API de Gerenciamento de Links de Pagamento, será necessário obter um token de acesso, conforme os passos abaixo:
 
