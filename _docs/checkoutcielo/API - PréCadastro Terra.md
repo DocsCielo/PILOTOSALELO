@@ -202,55 +202,55 @@ Resposta:
 
 **Tabela 02 - BusinessActivity**
 
-| C&oacute;digo | Atividade | Descri&ccedil;&atilde;o |
-| --- | --- | --- |
-| 5137 | TailorsSeamstresses | Alfaiates/Costureiras |
-| 7211 | Nanny | Bab&aacute; |
-| 8299 | SingerBandsOrchestras | Cantor /Bandas /Orquestras |
-| 8911 | BuildingDecoration | Constru&ccedil;&atilde;o / Decora&ccedil;&atilde;o |
-| 6211 | InsuranceBroker | Corretor de Seguros |
-| 6513 | Realtors | Corretores Imobili&aacute;rios |
-| 4215 | CourierFastDelivery | Courier /Entregas R&aacute;pidas |
-| 5814 | SweetmeatFrozenFood | Docerias / Comidas Congeladas |
-| 7333 | PhotographyAndFilming | Fotografia e Filmagem) |
-| 8999 | ActivityNotFound | N&atilde;o encontrei minha atividade |
-| 780 | Landscaping | Paisagismo |
-| 7997 | PersonalTrainner | Personal Trainner |
-| 8049 | PodiatryManicure | Podologia / Manicure |
-| 8244 | Teacher | Professor |
-| 7230 | BeautySalonBarberShop | Sal&atilde;o de Beleza / Barbearia |
-| 8011 | MedicalServices | Servi&ccedil;os M&eacute;dicos |
-| 8021 | DentalServices | Servi&ccedil;os Odontol&oacute;gicos |
-| 742 | VeterinaryServices | Servi&ccedil;os Veterin&aacute;rios |
-| 7277 | AttorneysServices | Servi&ccedil;os Advocat&iacute;cios |
-| 7298 | AestheticTreatments | Tratamentos Est&eacute;ticos |
-| 4121 | Taxi | T&aacute;xis |
-| 5964 | CatalogsSales | Vendas por Cat&aacute;logos |
+| C&oacute;digo | Atividade             | Descri&ccedil;&atilde;o                            |
+|---------------|-----------------------|----------------------------------------------------|
+| 5137          | TailorsSeamstresses   | Alfaiates/Costureiras                              |
+| 7211          | Nanny                 | Bab&aacute;                                        |
+| 8299          | SingerBandsOrchestras | Cantor /Bandas /Orquestras                         |
+| 8911          | BuildingDecoration    | Constru&ccedil;&atilde;o / Decora&ccedil;&atilde;o |
+| 6211          | InsuranceBroker       | Corretor de Seguros                                |
+| 6513          | Realtors              | Corretores Imobili&aacute;rios                     |
+| 4215          | CourierFastDelivery   | Courier /Entregas R&aacute;pidas                   |
+| 5814          | SweetmeatFrozenFood   | Docerias / Comidas Congeladas                      |
+| 7333          | PhotographyAndFilming | Fotografia e Filmagem)                             |
+| 8999          | ActivityNotFound      | N&atilde;o encontrei minha atividade               |
+| 780           | Landscaping           | Paisagismo                                         |
+| 7997          | PersonalTrainner      | Personal Trainner                                  |
+| 8049          | PodiatryManicure      | Podologia / Manicure                               |
+| 8244          | Teacher               | Professor                                          |
+| 7230          | BeautySalonBarberShop | Sal&atilde;o de Beleza / Barbearia                 |
+| 8011          | MedicalServices       | Servi&ccedil;os M&eacute;dicos                     |
+| 8021          | DentalServices        | Servi&ccedil;os Odontol&oacute;gicos               |
+| 742           | VeterinaryServices    | Servi&ccedil;os Veterin&aacute;rios                |
+| 7277          | AttorneysServices     | Servi&ccedil;os Advocat&iacute;cios                |
+| 7298          | AestheticTreatments   | Tratamentos Est&eacute;ticos                       |
+| 4121          | Taxi                  | T&aacute;xis                                       |
+| 5964          | CatalogsSales         | Vendas por Cat&aacute;logos                        |
 
 **Tabela 03 – Bank**
 
-| C&oacute;digo | Atividade | Descri&ccedil;&atilde;o |
-| --- | --- | --- |
-| 1 | BancoDoBrasil | BANCO DO BRASIL S.A. |
-| 237 | Bradesco | BANCO BRADESCO S.A. |
-| 104 | CaixaEconomicaFederal | CAIXA ECON&Ocirc;MICA FEDERAL |
-| 399 | HsbcmuLtiplo | HSBC BANK BRASIL S.A.- BANCO M&Uacute;LTIPLO |
-| 341 | ItauUnibanco | ITA&Uacute; UNIBANCO S.A. |
-| 33 | Santander | BANCO SANTANDER (BRASIL) S.A. |
-| 21 | Banestes | BANESTES S.A. BANCO DO ESTADO DO ESP&Iacute;RITO SANTO |
-| 70 | BrbBancodebras&iacute;lia | BRB- BANCO DE BRAS&Iacute;LIA S.A. |
-| 246 | Abc | BANCO ABC BRASIL S.A. |
-| 25 | Alfa | BANCO ALFA S.A. |
-| 44 | Bva | BANCO BVA S.A. |
-| 745 | Citibank | BANCO CITIBANK S.A. |
-| 748 | Sicredi | BANCO COOPERATIVO SICREDI S.A) |
-| 756 | Bancoob | BANCO COOPERATIVO DO BRASIL S.A - BANCOOB |
-| 707 | Daycoval | BANCO DAYCOVAL S.A. |
-| 604 | Bancoindustrialdobrasil | BANCO INDUSTRIAL DO BRASIL S.A. |
-| 389 | Mercantil | BANCO MERCANTIL DO BRASIL S.A. |
-| 623 | Panamericano | BANCO PANAMERICANO S.A. |
-| 453 | Rural | BANCO RURAL S.A. |
-| 422 | Safra | BANCO SAFRA S.A. |
-| 634 | BancoTriangulo | BANCO TRI&Acirc;NGULO S.A. |
-| 655 | Votorantim | BANCO VOTORANTIM S.A. |
-| 41 | BancoDoEstadoDoRioGrandeDoSul | BANCO DO ESTADO DO RIO GRANDE DO SUL S.A. |
+| C&oacute;digo | Atividade                     | Descri&ccedil;&atilde;o                                |
+|---------------|-------------------------------|--------------------------------------------------------|
+| 1             | BancoDoBrasil                 | BANCO DO BRASIL S.A.                                   |
+| 237           | Bradesco                      | BANCO BRADESCO S.A.                                    |
+| 104           | CaixaEconomicaFederal         | CAIXA ECON&Ocirc;MICA FEDERAL                          |
+| 399           | HsbcmuLtiplo                  | HSBC BANK BRASIL S.A.- BANCO M&Uacute;LTIPLO           |
+| 341           | ItauUnibanco                  | ITA&Uacute; UNIBANCO S.A.                              |
+| 33            | Santander                     | BANCO SANTANDER (BRASIL) S.A.                          |
+| 21            | Banestes                      | BANESTES S.A. BANCO DO ESTADO DO ESP&Iacute;RITO SANTO |
+| 70            | BrbBancodebras&iacute;lia     | BRB- BANCO DE BRAS&Iacute;LIA S.A.                     |
+| 246           | Abc                           | BANCO ABC BRASIL S.A.                                  |
+| 25            | Alfa                          | BANCO ALFA S.A.                                        |
+| 44            | Bva                           | BANCO BVA S.A.                                         |
+| 745           | Citibank                      | BANCO CITIBANK S.A.                                    |
+| 748           | Sicredi                       | BANCO COOPERATIVO SICREDI S.A)                         |
+| 756           | Bancoob                       | BANCO COOPERATIVO DO BRASIL S.A - BANCOOB              |
+| 707           | Daycoval                      | BANCO DAYCOVAL S.A.                                    |
+| 604           | Bancoindustrialdobrasil       | BANCO INDUSTRIAL DO BRASIL S.A.                        |
+| 389           | Mercantil                     | BANCO MERCANTIL DO BRASIL S.A.                         |
+| 623           | Panamericano                  | BANCO PANAMERICANO S.A.                                |
+| 453           | Rural                         | BANCO RURAL S.A.                                       |
+| 422           | Safra                         | BANCO SAFRA S.A.                                       |
+| 634           | BancoTriangulo                | BANCO TRI&Acirc;NGULO S.A.                             |
+| 655           | Votorantim                    | BANCO VOTORANTIM S.A.                                  |
+| 41            | BancoDoEstadoDoRioGrandeDoSul | BANCO DO ESTADO DO RIO GRANDE DO SUL S.A.              |
