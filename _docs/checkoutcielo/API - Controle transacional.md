@@ -27,9 +27,10 @@ Para acessá-la será necessário possuir:
 1. Clientd
 2. ClientSecret
 
-|PROPRIEDADE|DESCRIÇÃO|TIPO|
-|ClientId|Mesmo que o **MerchantId**|guid|
-|ClientSecret|Chave secreta que deverá ser obtida junto à Cielo|string|
+| PROPRIEDADE  | DESCRIÇÃO                                         | TIPO   |
+|--------------|---------------------------------------------------|--------|
+| ClientId     | Mesmo que o **MerchantId**                        | guid   |
+| ClientSecret | Chave secreta que deverá ser obtida junto à Cielo | string |
 
 Para obter acesso aos serviços da API de controle transacional, será necessário obter um token de acesso, conforme os passos abaixo:
 
@@ -37,8 +38,9 @@ Para obter acesso aos serviços da API de controle transacional, será necessár
 2. Codificar o resultado em *Base64*
 3. Enviar uma requisição, utilizando o método HTTP POST, para obter o token de acesso conforme abaixo:
 
-|**POST**|https://cieloecommerce.cielo.com.br/api/public/v2/token|
-|**Authorization**|Basic {Base64}|
+
+|**POST**         |https://cieloecommerce.cielo.com.br/api/public/v2/token|
+|**Authorization**|Basic {Base64}                                         |
 
 
 **EXEMPLO**
