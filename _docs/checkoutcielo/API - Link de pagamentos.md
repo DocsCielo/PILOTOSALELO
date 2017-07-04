@@ -206,12 +206,11 @@ Authorization: Bearer {access_token}
 
 Os dados retornados na resposta contemplam todos os enviados na requisição e dados adicionais referentes a criação do link.
 
-|PROPRIEDADE|TIPO|DESCRIÇÃO|
-|-----------|----|---------|
-|id|guid|Identificador único do link de pagamento.Pode ser utilizado para consultar, atualizar ou excluir o link.|
-|shortUrl|string|Representa o link de pagamento que ao ser aberto, em um browser, apresentará a tela do Checkout Cielo.|
-|links|object|Apresenta as operações disponíveis e possíveis (RESTful hypermedia) de serem efetuadas após a criação ou atualização do link.|
-
+| PROPRIEDADE | TIPO   | DESCRIÇÃO                                                                                                                     |
+|-------------|--------|-------------------------------------------------------------------------------------------------------------------------------|
+| id          | guid   | Identificador único do link de pagamento.Pode ser utilizado para consultar, atualizar ou excluir o link.                      |
+| shortUrl    | string | Representa o link de pagamento que ao ser aberto, em um browser, apresentará a tela do Checkout Cielo.                        |
+| links       | object | Apresenta as operações disponíveis e possíveis (RESTful hypermedia) de serem efetuadas após a criação ou atualização do link. |
 
 
 ### Consultar um Link
@@ -374,20 +373,22 @@ HTTP Status: 204 – No Content
 
 ### Códigos de Status HTTP
 
-|CÓDIGO|DESCRIÇÃO|
-|200 - OK|Tudo funcionou corretamente.|
-|400 – Bad Request|A requisição não foi aceita. Algum parâmetro não foi informado ou foi informado incorretamente.|
-|401 - Unauthorized|O token de acesso enviado no header da requisição não é válido.|
-|404 – Not Found|O recurso sendo acessado não existe. Ocorre ao tentar atualizar, consultar ou excluir um link inexistente.|
-|500 – Internal Server Error|Ocorreu um erro no sistema.|
+| CÓDIGO                      | DESCRIÇÃO                                                                                                  |
+|-----------------------------|------------------------------------------------------------------------------------------------------------|
+| 200 - OK                    | Tudo funcionou corretamente.                                                                               |
+| 400 – Bad Request           | A requisição não foi aceita. Algum parâmetro não foi informado ou foi informado incorretamente.            |
+| 401 - Unauthorized          | O token de acesso enviado no header da requisição não é válido.                                            |
+| 404 – Not Found             | O recurso sendo acessado não existe. Ocorre ao tentar atualizar, consultar ou excluir um link inexistente. |
+| 500 – Internal Server Error | Ocorreu um erro no sistema.                                                                                |
 
 
 
 ### Histórico de atualizações
 
-|Versão|Data|Descrição|
-|1.0|14/06/2017|Versão inicial|
-|1.1|22/06/2017|Correção da descrição do campo “shipping.originZipCode”|
+| Versão | Data       | Descrição                                               |
+|--------|------------|---------------------------------------------------------|
+| 1.0    | 14/06/2017 | Versão inicial                                          |
+| 1.1    | 22/06/2017 | Correção da descrição do campo “shipping.originZipCode” |
 
 
 
