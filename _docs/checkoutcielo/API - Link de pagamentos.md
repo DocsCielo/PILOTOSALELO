@@ -136,20 +136,18 @@ Authorization: Bearer {access_token}
 
 
 
-
-
-
-
-
 **Dados do Frete**
 
-|PROPRIEDADE|DESCRIÇÃO|TIPO|TAMANHO|OBRIGATÓRIO|
-|-----------|---------|----|-------|-----------|
-|shipping|Nó contendo informações de entrega do produto||||
+
+| PROPRIEDADE            | DESCRIÇÃO                                                                                      | TIPO   | TAMANHO | OBRIGATÓRIO |
+|------------------------|------------------------------------------------------------------------------------------------|--------|---------|-------------|
+| shipping               | Nó contendo informações de entrega do produto                                                  |        |         |             |
+| shipping.name          | Nome do frete. **Obrigatório para frete tipo “FixedAmount”**                                   | string | 128     | Sim         |
+| shipping.price         | O valor do frete. **Obrigatório para frete tipo “FixedAmount”**                                | int    | 100000  | Sim         |
+| shipping.originZipCode | Cep de origem da encomenda. Obrigatório para frete tipo “Correios”. Deve conter apenas números | string | 8       | Não         |
 |shipping.type|Tipo de frete.<br>**Correios** – Entrega pelos correios<br>**FixedAmount** – Valor Fixo<br>**Free** - Grátis<br>**WithoutShippingPickUp** – Sem entrega com retirada na loja<br>**WithoutShipping** – Sem entrega<br><br>Se o tipo de produto escolhido for “**Asset**”, os tipos permitidos de frete são: _**“Correios, FixedAmount ou Free”**_.<br><br>Se o tipo produto escolhido for “**Digital**” ou “**Service**”, os tipos permitidos de frete são: _**“WithoutShipping, WithoutShippingPickUp”**_.<br><br>Se o tipo produto escolhido for “**Recurrent**” o tipo de frete permitido é: _**“WithoutShipping”**_.|string|255|Sim|
-|shipping.name|Nome do frete. **Obrigatório para frete tipo “FixedAmount”**|string|128|Sim|
-|shipping.price|O valor do frete. **Obrigatório para frete tipo “FixedAmount”**|int|100000|Sim|
-|shipping.originZipCode|Cep de origem da encomenda. Obrigatório para frete tipo “Correios”. Deve conter apenas números|string|8|Não|
+
+
 
 
 
