@@ -141,49 +141,59 @@ Resposta:
  </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 
-| Parametro | Descri&ccedil;&atilde;o | Tipo | Tamanho | Obrigat&oacute;rio |
-| --- | --- | --- | --- | --- |
-| CieloClient | Sim / N&atilde;o | Booleano | &nbsp; | Sim |
-| Name | Nome de contato com a loja (Deve ser sempre enviado o nome completo do lojista) | Alfa Num. | 32 | Sim |
-| Email | E-mail que ser&aacute; usado para contato e como login | Alfa Num. | 60 | Sim |
-| SecondEmail | E-mail secund&aacute;rio caso o lojista deseje ter um segundo inbox de informa&ccedil;&otilde;es | Alfa Num. | 64 | N&atilde;o |
-| CellPhone | Telefone celular - (99) 99999-9999 | Alfa Num. | 15 | Sim |
-| Landline | Telefone fixo (99) 99999-9999 | Alfa Num. | 15 | Sim |
-| AcceptReceiveCieloInformation | Sim / N&atilde;o | Booleano | &nbsp; | Sim |
-| Website | URL da loja. | Alfa Num. | 256 | N&atilde;o |
-| PersonType | Enum de cadastro: (1- Personal (Pessoa F&iacute;sica)/2- Company (Pessoa Jur&iacute;dica)) | Enum | &nbsp; | Sim (Influencia outros campos) |
-| CPF | 999.999.999-99 | Alfa Num. | 11 | Sim (caso PF) |
-| BusinessActivity | Veja tabela 02 | Enum | &nbsp; | Sim (caso PF) |
-| BirthDate | DD/MM/AAAA | Alfa Num. | 10 | Sim (caso PF) |
-| CNPJ | 99.999.999/9999-99 | Alfa Num. | 14 | Sim (caso PJ) |
-| TradingName | Nome Fantasia da loja | Alfa Num. | 32 | Sim (caso PJ) |
-| CompanyName | Raz&atilde;o social da loja | Alfa Num. | 32 | Sim (caso PJ) |
-| OwnerName | Nome do propriet&aacute;rio da loa | Alfa Num. | 50 | Sim (caso PJ) |
-| OwnerCpf | CPF do propriet&aacute;rio da loja - 999.999.999-99 | Alfa Num. | 11 | Sim (caso PJ) |
-| OwnerBirthDate | Data de nascimento do propriet&aacute;rio: (DD/MM/AAAA) | Alfa Num. | 10 | Sim (caso PJ) |
-| ZipCode | CEP de contato - 99999-999 | Alfa Num. | 9 | Sim |
-| Street | Endere&ccedil;o do contato | Alfa Num. | 32 | Sim |
-| Number | Numero | Alfa Num. | 6 | Sim |
-| Complement (opcional) | Complemento do endere&ccedil;o | Alfa Num. | 26 | N&atilde;o |
-| City | Cidade | Alfa Num. | 28 | Sim |
-| State | Unidade Federativa (EX: RJ) | Enum | &nbsp; | Sim |
-| ZipCode | 99999-999 | Alfa Num. | 9 | Sim |
-| Street | Endere&ccedil;o da Loja | Alfa Num. | 32 | Sim |
-| Number | Numero | Alfa Num. | 6 | Sim |
-| Complement (opcional) | Complemento do endere&ccedil;o | Alfa Num. | 26 | N&atilde;o |
-| City | Cidade | Alfa Num. | 28 | Sim |
-| State | Unidade Federativa (EX: RJ) | Enum | &nbsp; | Sim |
-| Bank | Veja tabela 03 | Enum | &nbsp; | Sim |
-| Agency | Ag&ecirc;ncia bancaria | Alfa Num. | 4 | Sim |
-| DigitAgency | Digito da ag&ecirc;ncia | Alfa Num. | 1 | Para Banco do Brasil |
-| AccountType | Enum de Conta bancaria: (001 – CurrentAccount (Conta Corrente)/002 – SimpleAccount (Conta Simples)) | Enum | &nbsp; | Para Caixa Economica Federal |
-| Account | Conta Bancaria | Alfa Num. | 13 | Sim |
-| DigitAccount | Digito da conta | Alfa Num. | 1 | Sim |
-| ContactName | Nome do desenvolvedor da loja | Alfa Num. | 32 | N&atilde;o |
-| ContactPhone | Numero de telefone do desenvolvedor | Alfa Num. | 15 | 15 |
-| ContactEmail | E-mail do desenvolvedor da loja | Alfa Num. | 64 | N&atilde;o |
-| CompanyDeveloper | Nome da empresa respons&aacute;vel pelo desenvolvimento da loja | Alfa Num. | 32 | N&atilde;o |
-| PackageCielo | Enum de pacote Cielo:(Avulso/PlanoA/PlanoB/PlanoC/PlanoD) | Enum | &nbsp; | Sim |
+
+
+| Parametro                     | Descri&ccedil;&atilde;o                                                                             | Tipo      | Tamanho | Obrigat&oacute;rio             |
+|-------------------------------|-----------------------------------------------------------------------------------------------------|-----------|---------|--------------------------------|
+| CieloClient                   | Sim / N&atilde;o                                                                                    | Booleano  |         | Sim                            |
+| Name                          | Nome de contato com a loja (Deve ser sempre enviado o nome completo do lojista)                     | Alfa Num. | 32      | Sim                            |
+| Email                         | E-mail que ser&aacute; usado para contato e como login                                              | Alfa Num. | 60      | Sim                            |
+| SecondEmail                   | E-mail secund&aacute;rio caso o lojista deseje ter um segundo inbox de informa&ccedil;&otilde;es    | Alfa Num. | 64      | N&atilde;o                     |
+| CellPhone                     | Telefone celular - (99) 99999-9999                                                                  | Alfa Num. | 15      | Sim                            |
+| Landline                      | Telefone fixo (99) 99999-9999                                                                       | Alfa Num. | 15      | Sim                            |
+| AcceptReceiveCieloInformation | Sim / N&atilde;o                                                                                    | Booleano  |         | Sim                            |
+| Website                       | URL da loja.                                                                                        | Alfa Num. | 256     | N&atilde;o                     |
+| PersonType                    | Enum de cadastro: (1- Personal (Pessoa F&iacute;sica)/2- Company (Pessoa Jur&iacute;dica))          | Enum      |         | Sim (Influencia outros campos) |
+| CPF                           | 999.999.999-99                                                                                      | Alfa Num. | 11      | Sim (caso PF)                  |
+| BusinessActivity              | Veja tabela 02                                                                                      | Enum      |         | Sim (caso PF)                  |
+| BirthDate                     | DD/MM/AAAA                                                                                          | Alfa Num. | 10      | Sim (caso PF)                  |
+| CNPJ                          | 99.999.999/9999-99                                                                                  | Alfa Num. | 14      | Sim (caso PJ)                  |
+| TradingName                   | Nome Fantasia da loja                                                                               | Alfa Num. | 32      | Sim (caso PJ)                  |
+| CompanyName                   | Raz&atilde;o social da loja                                                                         | Alfa Num. | 32      | Sim (caso PJ)                  |
+| OwnerName                     | Nome do propriet&aacute;rio da loa                                                                  | Alfa Num. | 50      | Sim (caso PJ)                  |
+| OwnerCpf                      | CPF do propriet&aacute;rio da loja - 999.999.999-99                                                 | Alfa Num. | 11      | Sim (caso PJ)                  |
+| OwnerBirthDate                | Data de nascimento do propriet&aacute;rio: (DD/MM/AAAA)                                             | Alfa Num. | 10      | Sim (caso PJ)                  |
+| ZipCode                       | CEP de contato - 99999-999                                                                          | Alfa Num. | 9       | Sim                            |
+| Street                        | Endere&ccedil;o do contato                                                                          | Alfa Num. | 32      | Sim                            |
+| Number                        | Numero                                                                                              | Alfa Num. | 6       | Sim                            |
+| Complement (opcional)         | Complemento do endere&ccedil;o                                                                      | Alfa Num. | 26      | N&atilde;o                     |
+| City                          | Cidade                                                                                              | Alfa Num. | 28      | Sim                            |
+| State                         | Unidade Federativa (EX: RJ)                                                                         | Enum      |         | Sim                            |
+| ZipCode                       | 99999-999                                                                                           | Alfa Num. | 9       | Sim                            |
+| Street                        | Endere&ccedil;o da Loja                                                                             | Alfa Num. | 32      | Sim                            |
+| Number                        | Numero                                                                                              | Alfa Num. | 6       | Sim                            |
+| Complement (opcional)         | Complemento do endere&ccedil;o                                                                      | Alfa Num. | 26      | N&atilde;o                     |
+| City                          | Cidade                                                                                              | Alfa Num. | 28      | Sim                            |
+| State                         | Unidade Federativa (EX: RJ)                                                                         | Enum      |         | Sim                            |
+| Bank                          | Veja tabela 03                                                                                      | Enum      |         | Sim                            |
+| Agency                        | Ag&ecirc;ncia bancaria                                                                              | Alfa Num. | 4       | Sim                            |
+| DigitAgency                   | Digito da ag&ecirc;ncia                                                                             | Alfa Num. | 1       | Para Banco do Brasil           |
+| AccountType                   | Enum de Conta bancaria: (001 – CurrentAccount (Conta Corrente)/002 – SimpleAccount (Conta Simples)) | Enum      |         | Para Caixa Economica Federal   |
+| Account                       | Conta Bancaria                                                                                      | Alfa Num. | 13      | Sim                            |
+| DigitAccount                  | Digito da conta                                                                                     | Alfa Num. | 1       | Sim                            |
+| ContactName                   | Nome do desenvolvedor da loja                                                                       | Alfa Num. | 32      | N&atilde;o                     |
+| ContactPhone                  | Numero de telefone do desenvolvedor                                                                 | Alfa Num. | 15      | 15                             |
+| ContactEmail                  | E-mail do desenvolvedor da loja                                                                     | Alfa Num. | 64      | N&atilde;o                     |
+| CompanyDeveloper              | Nome da empresa respons&aacute;vel pelo desenvolvimento da loja                                     | Alfa Num. | 32      | N&atilde;o                     |
+| PackageCielo                  | Enum de pacote Cielo:(Avulso/PlanoA/PlanoB/PlanoC/PlanoD)                                           | Enum      |         | Sim                            |
+
+
+
+
+
+
+
+
 
 > 1. Os campos “**PersonalData**” e “**CompanyData**” passam a ser obrigat&oacute;rios ou n&atilde;o de acordo com o tipo de loja definido no campo “**PersonType**”.
 > 2. Os campos “**BusinessActivity**” deve conter apenas o numero do c&oacute;digo da atividade da loja ou a denomina&ccedil;&atilde;o descrita na tabela 02 (denomina&ccedil;&atilde;o em ingl&ecirc;s)
