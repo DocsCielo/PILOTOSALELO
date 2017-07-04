@@ -61,10 +61,11 @@ Para obter acesso aos serviços da API de Gerenciamento de Links de Pagamento, s
 ```
 
 
-|PROPRIEDADE|DESCRIÇÃO|TIPO|
-|access_token|Utilizado para acesso aos serviços da API|string|
-|token_type|Sempre será do tipo “bearer”|texto|
-|expires_in|Validade do token em segundos. Aproximadamente 20 minutos|int|
+| PROPRIEDADE  | DESCRIÇÃO                                                 | TIPO   |
+|--------------|-----------------------------------------------------------|--------|
+| access_token | Utilizado para acesso aos serviços da API                 | string |
+| token_type   | Sempre será do tipo “bearer”                              | texto  |
+| expires_in   | Validade do token em segundos. Aproximadamente 20 minutos | int    |
 
 Como se pode observar, o token possui um tempo de expiração aproximado de 20 minutos (1.200 segundos). Portanto, quando o mesmo expirar, será necessário obter um novo token para acesso aos serviços. 
 
@@ -130,6 +131,27 @@ Authorization: Bearer {access_token}
 |weight|Peso do produto em **gramas**|String|2000000|Não|
 |softDescriptor|Descrição a ser apresentada na fatura do cartão de crédito do portador.|String|13|Não|
 |maxNumberOf<br>Installments|Número máximo de parcelas que o comprador pode selecionar na tela de Checkout.Se não informado será utilizada as configurações da loja no Checkout Cielo.|int|2|Não|
+
+
+
+| PROPRIEDADE                 | DESCRIÇÃO              | TIPO                                                                                | TAMANHO    | OBRIGATÓRIO |
+|-----------------------------|------------------------|-------------------------------------------------------------------------------------|------------|-------------|
+
+| type                        | Tipo de venda a ser realizada através do link de pagamento: <br><br>**Asset** – Material Físico<br>**Digital** – Produto Digital<br>**Service** – Serviço<br>**Payment** – Pagamentos Simples<br>**Recurrent** – Pagamento Recorrente | String                                                                          | 255        | SIM        |
+| name                        | Nome do produto        | String                                                                              | 128        | SIM        |
+| description                 | Descrição do produto que será exibida na tela de Checkout caso a opção show_description seja verdadeira.Pode-se utilizar o caracter pipe ` | ` caso seja desejável quebrar a linha ao apresentar a descrição na tela de Checkout | String     | 512        |
+| showDescription             | Flag indicando se a descrição deve ou não ser exibida na tela de Checkout                                    | String     | --         | Não         |
+| price                       | Valor do produto em **centavos**                                                                             | Int        | 1000000    | SIM         |
+| expirationDate              | Data de expiração do link. Caso uma data senha informada, o link se torna indisponível na data informada. Se nenhuma data for informada, o link não expira.| String                                                                              | YYYY-MM-DD | Não         |
+| weight                      | Peso do produto em **gramas**| String                                                                        | 2000000    | Não         |
+| softDescriptor              | Descrição a ser apresentada na fatura do cartão de crédito do portador.| String                              | 13         | Não         |
+| maxNumberOf<br>Installments | Número máximo de parcelas que o comprador pode selecionar na tela de Checkout.Se não informado será utilizada as configurações da loja no Checkout Cielo.| int| 2| Não|
+
+
+
+
+
+
 
 
 
