@@ -389,6 +389,6 @@ HTTP Status: 204 – No Content
 |--------|------------|---------------------------------------------------------|
 | 1.0    | 14/06/2017 | Versão inicial                                          |
 | 1.1    | 22/06/2017 | Correção da descrição do campo “shipping.originZipCode” |
-
+| 1.2    | 06/07/2017 | Mudança na URL do serviço de product para products      |
 
 
