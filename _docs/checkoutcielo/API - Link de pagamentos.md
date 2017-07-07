@@ -10,7 +10,7 @@ A **API de Gerenciamento de Link de Pagamentos** permite ao lojista criar, edita
 
 Seu principal objetivo é permitir que lojas possam criar links de pagamento, através de seus próprios sistemas, sem a necessidade de acessar o Backoffice do Checkout Cielo e compartilhar com seus clientes.
 
-> Endereço: <https://cieloecommerce.cielo.com.br/api/public/v1/product>
+> Endereço: <https://cieloecommerce.cielo.com.br/api/public/v1/products>
 
 
 ### Autorização de acesso
