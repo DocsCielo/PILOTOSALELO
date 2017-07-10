@@ -92,7 +92,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfbmFtZSI6I
 Você pode criar um link para disponibilizá-los aos seus clientes para pagamentos. Para criar diversos links, você pode efetuar várias requisições.
 
 
-> URL de POST <https://cieloecommerce.cielo.com.br/api/public/v1/product/>
+> URL de POST <https://cieloecommerce.cielo.com.br/api/public/v1/products/>
 
 **Header:**
 
@@ -218,7 +218,7 @@ Os dados retornados na resposta contemplam todos os enviados na requisição e d
 Consultar um link existente pelo seu identificador.
 **Definição**
 
-> `GET`: https://cieloecommerce.cielo.com.br/api/public/v1/product/`{id}` 
+> `GET`: https://cieloecommerce.cielo.com.br/api/public/v1/products/`{id}` 
 
 
 **Header:**
@@ -252,17 +252,17 @@ HTTP Status: 200 – OK
         {
             "method": "GET",
             "rel": "self",
-            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/product/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
+            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/products/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
         },
         {
             "method": "PUT",
             "rel": "update",
-            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/product/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
+            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/products/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
         },
         {
             "method": "DELETE",
             "rel": "delete",
-            "href": " https://cieloecommerce.cielo.com.br/Api/public/v1/product/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
+            "href": " https://cieloecommerce.cielo.com.br/Api/public/v1/products/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
         }
     ]
 }
@@ -275,7 +275,7 @@ HTTP Status: 200 – OK
 Atualiza um link pelo seu identificador.
 **Definição**
 
-> `PUT`: https://cieloecommerce.cielo.com.br/api/public/v1/product/`{id}` 
+> `PUT`: https://cieloecommerce.cielo.com.br/api/public/v1/products/`{id}` 
 
 
 **Header:**
@@ -331,17 +331,17 @@ HTTP Status: 200 – OK
         {
             "method": "GET",
             "rel": "self",
-            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/product/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
+            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/products/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
         },
         {
             "method": "PUT",
             "rel": "update",
-            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/product/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
+            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/products/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
         },
         {
             "method": "DELETE",
             "rel": "delete",
-            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/product/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
+            "href": "https://cieloecommerce.cielo.com.br/Api/public/v1/products/529aca91-2961-4976-8f7d-9e3f2fa8a0c9"
         }
     ]
 }
@@ -356,7 +356,7 @@ Exclui um link pelo seu identificador.
 
 **Definição**
 
-> `DELETE`: https://cieloecommerce.cielo.com.br/api/public/v1/product/`{id}` 
+> `DELETE`: https://cieloecommerce.cielo.com.br/api/public/v1/products/`{id}` 
 
 
 **Header:**
