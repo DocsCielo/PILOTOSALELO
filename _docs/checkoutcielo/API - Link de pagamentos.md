@@ -8,10 +8,12 @@ order: 1
 
 A **API de Gerenciamento de Link de Pagamentos** permite ao lojista criar, editar e consultar links de pagamentos. 
 
-Seu principal objetivo é permitir que lojas possam criar links de pagamento, através de seus próprios sistemas, sem a necessidade de acessar o Backoffice do Checkout Cielo e compartilhar com seus clientes.
+Seu principal objetivo é permitir que lojas possam criar links de pagamento (Botões ou QR Codes), através de seus próprios sistemas, sem a necessidade de acessar o Backoffice do Checkout Cielo e compartilhar com seus clientes.
 
 > Endereço: <https://cieloecommerce.cielo.com.br/api/public/v1/products>
 
+
+> OBS: O link de pagamentos não é uma URL DE **PEDIDO/TRANSAÇÃO**. Ele é um "carrinho" que pode ser reutilizado inúmeras vezes.
 
 ### Autorização de acesso
 
@@ -131,7 +133,6 @@ Authorization: Bearer {access_token}
 | weight                      | Peso do produto em **gramas**| String                                                                        | 2000000    | Não         |
 | softDescriptor              | Descrição a ser apresentada na fatura do cartão de crédito do portador.| String                              | 13         | Não         |
 | maxNumberOf<br>Installments | Número máximo de parcelas que o comprador pode selecionar na tela de Checkout.Se não informado será utilizada as configurações da loja no Checkout Cielo.| int| 2| Não|
-
 
 
 
