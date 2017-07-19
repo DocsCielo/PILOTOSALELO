@@ -1,7 +1,7 @@
 ---
 title: Checkout LightBox 
 category: CHECKOUT CIELO
-order: 1
+order: 3
 ---
 
 ### O QUE É O CHECKOUT LIGHTBOX
