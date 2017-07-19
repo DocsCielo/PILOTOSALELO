@@ -1,5 +1,5 @@
 ---
-title: CheckoutLightBox 
+title: Checkout LightBox 
 category: CHECKOUT CIELO
 order: 1
 ---
