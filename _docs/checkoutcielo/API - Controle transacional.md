@@ -14,6 +14,7 @@ As operações possíveis de serem realizadas são:
 * **Captura** – capturar uma transação com valor total
 * **Cancelamento** – cancelar uma transação com valor total
 
+
 Seu principal objetivo é permitir que lojas e plataformas possam automatizar as operações através de seus próprios sistemas. 
 
 > Endereço: https://cieloecommerce.cielo.com.br/api/public/v2/orders/  
