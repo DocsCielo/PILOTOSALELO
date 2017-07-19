@@ -66,11 +66,11 @@ Para obter acesso aos serviços da API de controle transacional, será necessár
     "expires_in": 1199
 }
 ```
-| PROPRIEDADE  | DESCRIÇÃO                                                 | TIPO   |
-|--------------|-----------------------------------------------------------|--------|
-| access_token | Utilizado para acesso aos serviços da API                 | string |
-| token_type   | Sempre será do tipo “bearer”                              | texto  |
-| expires_in   | Validade do token em segundos. Aproximadamente 20 minutos | int    |
+| PROPRIEDADE  | DESCRIÇÃO                                                | TIPO   |
+|--------------|----------------------------------------------------------|--------|
+| access_token | Utilizado para acesso aos serviços da API                | string |
+| token_type   | Sempre será do tipo “bearer”                             | texto  |
+| expires_in   | Validade do token em segundos. Aproximadamente 20 minutos| int    |
 
 Como se pode observar, o token possui um tempo de expiração aproximado de 20 minutos (1.200 segundos). Portanto, quando o mesmo expirar, será necessário obter um novo token para acesso aos serviços. 
 
