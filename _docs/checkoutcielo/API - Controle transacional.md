@@ -11,8 +11,8 @@ A **API de Controle Transacional** permite ao lojista realizar operações sobre
 
 As operações possíveis de serem realizadas são: 
 * **Consulta** – consultar uma transação
-* **Captura** – capturar uma transação com valor total ou parcial.
-* **Cancelamento** – cancelar uma transação com valor total ou parcial
+* **Captura** – capturar uma transação com valor total
+* **Cancelamento** – cancelar uma transação com valor total
 
 Seu principal objetivo é permitir que lojas e plataformas possam automatizar as operações através de seus próprios sistemas. 
 
