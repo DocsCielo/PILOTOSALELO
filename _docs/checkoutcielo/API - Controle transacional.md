@@ -66,6 +66,7 @@ Para obter acesso aos serviços da API de controle transacional, será necessár
     "expires_in": 1199
 }
 ```
+
 | PROPRIEDADE  | DESCRIÇÃO                                                | TIPO   |
 |--------------|----------------------------------------------------------|--------|
 | access_token | Utilizado para acesso aos serviços da API                | string |
