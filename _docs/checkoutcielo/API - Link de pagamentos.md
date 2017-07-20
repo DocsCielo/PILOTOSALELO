@@ -13,7 +13,11 @@ Seu principal objetivo é permitir que lojas possam criar links de pagamento (Bo
 > Endereço: <https://cieloecommerce.cielo.com.br/api/public/v1/products>
 
 
-> OBS: O link de pagamentos não é uma URL DE **PEDIDO/TRANSAÇÃO**. Ele é um "carrinho" que pode ser reutilizado inúmeras vezes.
+> **Atenção**: O link de pagamentos não é uma URL DE **PEDIDO/TRANSAÇÃO**. Ele é um "carrinho" que pode ser reutilizado inúmeras vezes.
+
+
+> **Atenção**: Para receber notificações sobre transações originadas de Links de pagamento é OBRIGATÓRIO o cadastro da URL de Notificação.
+
 
 ### Autorização de acesso
 
