@@ -20,6 +20,20 @@ Seu principal objetivo é permitir que lojas e plataformas possam automatizar as
 > Endereço: https://cieloecommerce.cielo.com.br/api/public/v2/orders/  
 
 
+### Pré-requisitos para utilização
+
+Para realizar o controle transacional no Checkout Cielo é OBRIGATÓRIO que a loja possua um dos dois modelos de notificação abaixo configurado:
+
+* URL de Notificação via **POST**
+* URL de Notificação via **JSON**
+
+
+A notificação é obrigatorio pois todos os comandos da API (Consulta / Captura / Cancelamento) usam o identificado unico da transação, chamado de `Checkout_Cielo_Order_Number`.
+
+O `Checkout_Cielo_Order_Number` é um identificado único gerado apenas quando o pagamento é *finalizado na tela transacional*. Ele é enviado apenas pela *URL de Notificação* e não pelo Response da criação da tela transacional. 
+
+
+
 ### Autorização de acesso
 
 A API de controle transacional utiliza como forma de segurança o **protocolo OAUTH**.
@@ -102,9 +116,9 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfbmFtZSI6I
 
 ### Consultar uma transação
 
-Permite consultar uma transação pelo número do pedido
+Permite consultar uma transação pelo número do pedido gerado pelo Checkout Cielo
 
-> `GET` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{orderNumber}`
+> `GET` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{checkout_cielo_order_number}`
 
 **Header:**
 
@@ -183,7 +197,7 @@ Permite capturar uma transação pelo número do pedido.
 
 **Definição**
 
-> `PUT` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{orderNumber}`/capture 
+> `PUT` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{checkout_cielo_order_number}`/capture 
 
 
 **Header:**
@@ -225,7 +239,7 @@ Permite cancelar uma transação pelo número do pedido.
 
 **Definição**
 
-> `PUT` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{orderNumber}`/void  
+> `PUT` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{checkout_cielo_order_number}`/void  
 
 
 **Header:**
