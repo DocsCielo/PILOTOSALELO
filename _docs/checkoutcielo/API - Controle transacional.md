@@ -195,10 +195,16 @@ Authorization: Bearer {access_token}
 
 Permite capturar uma transação pelo número do pedido.
 
-**Definição**
 
+**Captura Total**
 > `PUT` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{checkout_cielo_order_number}`/capture 
 
+**Captura Parcial**
+
+> `PUT` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{checkout_cielo_order_number}`/capture?amount={Valor}
+
+
+**OBS**: A captura parcial pode ser realizada apenas 1 vez e é exclusiva para cartão de crédito.
 
 **Header:**
 
@@ -237,9 +243,17 @@ HTTP Status: 200 – OK
 
 Permite cancelar uma transação pelo número do pedido.
 
-**Definição**
+**Cancelamento total**
 
 > `PUT` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{checkout_cielo_order_number}`/void  
+
+**Camcelamento Parcial**
+
+> `PUT` https://cieloecommerce.cielo.com.br/api/public/v2/orders/`{checkout_cielo_order_number}`/void?amount={Valor}
+
+
+**OBS**: O cancelamento parcial pode ser realizada apenas após a captura. O cancelamento parcial pode ser realizado inumeras vezes até que o valor total seja cancelado.
+
 
 
 **Header:**
