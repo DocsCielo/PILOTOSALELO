@@ -11,3 +11,4 @@ Caso deseje utiliza-las entre em contato com a Equipe de PRODUTOS CIELO, e obten
 
 1. **Link de Pagamentos** - _Permite a Criação de links de Pagamentos/QR Codes/Botões via API. Disponivel apenas para Plataformas cadastradas junto a Produtos Cielo._
 2. **Controle de pagamento** - _Permite a captura e cancelamento de transações via API. Disponivel apenas para Plataformas cadastradas junto a Produtos Cielo._
+3. **Checkout Lightbox** - _Permite renderizar o Checkout Cielo sobre o ambiente do lojista num Lightbox_
