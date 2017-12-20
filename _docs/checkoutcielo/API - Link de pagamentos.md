@@ -49,11 +49,9 @@ O que eles fizeram? Sendo uma empresa antenada que não queria passar uma caixin
 
 Hoje os funcionários contribuem mensalmente sem ter que lembrar de pagar, uma vez que a Recorrência do Checkout Cielo realiza uma nova transação de cobrança todos os meses!
 
-
-
 ### Autorização de acesso
 
-A API de Gerenciamento de Links de Pagamento utiliza como forma de segurança o **protocolo OAUTH**.
+A API de Gerenciamento de `Links de Pagamento` utiliza como forma de segurança o **protocolo OAUTH**.
 Para acessá-la será necessário possuir: 
 
 1. Clientd
@@ -72,7 +70,6 @@ Para obter acesso aos serviços da API de Gerenciamento de Links de Pagamento, s
 
 |**POST**|https://cieloecommerce.cielo.com.br/api/public/v2/token|
 |**Authorization**|Basic {Base64}|
-
 
 **EXEMPLO**
 
