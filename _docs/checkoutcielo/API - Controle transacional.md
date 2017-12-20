@@ -8,17 +8,14 @@ order: 3
 
 A **API de Controle Transacional** permite ao lojista realizar operações sobre os pedidos que antes eram possíveis somente através do Backoffice do Checkout Cielo. 
 
-
 As operações possíveis de serem realizadas são: 
 * **Consulta** – consultar uma transação
 * **Captura** – capturar uma transação com valor total
 * **Cancelamento** – cancelar uma transação com valor total
 
-
 Seu principal objetivo é permitir que lojas e plataformas possam automatizar as operações através de seus próprios sistemas. 
 
 > Endereço: https://cieloecommerce.cielo.com.br/api/public/v2/orders/  
-
 
 ### Pré-requisitos para utilização
 
@@ -27,12 +24,9 @@ Para realizar o controle transacional no Checkout Cielo é OBRIGATÓRIO que a lo
 * URL de Notificação via **POST**
 * URL de Notificação via **JSON**
 
-
 A notificação é obrigatorio pois todos os comandos da API (Consulta / Captura / Cancelamento) usam o identificado unico da transação, chamado de `Checkout_Cielo_Order_Number`.
 
 O `Checkout_Cielo_Order_Number` é um identificado único gerado apenas quando o pagamento é *finalizado na tela transacional*. Ele é enviado apenas pela *URL de Notificação* e não pelo Response da criação da tela transacional. 
-
-
 
 ### Autorização de acesso
 
@@ -53,10 +47,8 @@ Para obter acesso aos serviços da API de controle transacional, será necessár
 2. Codificar o resultado em *Base64*
 3. Enviar uma requisição, utilizando o método HTTP POST, para obter o token de acesso conforme abaixo:
 
-
 |**POST**         |https://cieloecommerce.cielo.com.br/api/public/v2/token|
 |**Authorization**|Basic {Base64}                                         |
-
 
 **EXEMPLO**
 
@@ -64,7 +56,6 @@ Para obter acesso aos serviços da API de controle transacional, será necessár
 * **ClientSecret** - 08Qkje79NwWRx5BdgNJsIkBuITt5cIVO
 * **ClientId:ClientSecret** - *b521b6b2-b9b4-4a30-881d-3b63dece0006:08Qkje79NwWRx5BdgNJsIkBuITt5cIVO*
 * **Base64** - YjUyMWI2YjItYjliNC00YTMwLTg4MWQtM2I2M2RlY2UwMDA2OiAwOFFramU3OU53V1J4NUJkZ05Kc0lrQnVJVHQ1Y0lWTw
-
 
 **REQUISIÇÃO**
 ```
@@ -91,8 +82,6 @@ Para obter acesso aos serviços da API de controle transacional, será necessár
 |Expires_in| Validade do token em segundos. Aproximadamente 20 minutos|int|
 
 Como se pode observar, o token possui um tempo de expiração aproximado de 20 minutos (1.200 segundos). Portanto, quando o mesmo expirar, será necessário obter um novo token para acesso aos serviços. 
-
-
 
 ### Utilizando Serviços
 
