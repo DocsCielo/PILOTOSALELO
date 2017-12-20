@@ -54,10 +54,10 @@ Hoje os funcionários contribuem mensalmente sem ter que lembrar de pagar, uma v
 A API de Gerenciamento de `Links de Pagamento` utiliza como forma de segurança o **protocolo OAUTH**.
 Para acessá-la será necessário possuir: 
 
-| PROPRIEDADE  | DESCRIÇÃO                                         | TIPO   |
-|--------------|---------------------------------------------------|--------|
-| ClientId     | Mesmo que o **MerchantId**                        | guid   |
-| ClientSecret | Chave secreta que deverá ser obtida dentro do backoffice Cielo | string |
+| PROPRIEDADE    | DESCRIÇÃO                                                      | TIPO   |
+|----------------|----------------------------------------------------------------|--------|
+| `ClientId`     | Mesmo que o **MerchantId**                                     | guid   |
+| `ClientSecret` | Chave secreta que deverá ser obtida dentro do backoffice Cielo | string |
 
 Para obter as credênciais de acesso a API, basta seguir o fluxo abaixo:
 
