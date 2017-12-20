@@ -54,15 +54,25 @@ Hoje os funcionários contribuem mensalmente sem ter que lembrar de pagar, uma v
 A API de Gerenciamento de `Links de Pagamento` utiliza como forma de segurança o **protocolo OAUTH**.
 Para acessá-la será necessário possuir: 
 
-1. Clientd
-2. ClientSecret
-
 | PROPRIEDADE  | DESCRIÇÃO                                         | TIPO   |
 |--------------|---------------------------------------------------|--------|
 | ClientId     | Mesmo que o **MerchantId**                        | guid   |
-| ClientSecret | Chave secreta que deverá ser obtida junto à Cielo | string |
+| ClientSecret | Chave secreta que deverá ser obtida dentro do backoffice Cielo | string |
 
-Para obter acesso aos serviços da API de Gerenciamento de Links de Pagamento, será necessário obter um token de acesso, conforme os passos abaixo:
+Para obter as credênciais de acesso a API, basta seguir o fluxo abaixo:
+
+1 - Acesso o Backoffice **Checkout Cielo**
+2 - Na aba **"Configurações"**, acesse a opção **"Dados cadastrais"** clique em **"Gerar Credenciais de acesso às APIs"** como na imagem abaixo
+
+![backoffice](http://moss-beaver.cloudvent.net/images/gerarcredenciais.png)
+
+3 - A mensagem abaixo será enviada para o **e-mail de contato tecnico**, contendo as credenciais de acesso:
+
+![e-mail](http://moss-beaver.cloudvent.net/images/emailcredencial.PNG)
+
+> Caso o botão de **"Gerar Credenciais de acesso às APIs"** não esteja disponivel em seu backoffice, acione a equipe de Produtos Cielo para a liberação da funcionalidade
+
+Para obter acesso aos serviços da API de Gerenciamento de `Links de Pagamento`, será necessário obter um token de acesso, conforme os passos abaixo:
 
 1. Concatenar o _ClientId_ e o _ClientSecret_, **ClientId:ClientSecret**
 2. Codificar o resultado em *Base64*
