@@ -30,7 +30,7 @@ O `Checkout_Cielo_Order_Number` é um identificado único gerado apenas quando o
 
 ### Autorização de acesso
 
-A API de controle transacional utiliza como forma de segurança o **protocolo OAUTH**.
+A API de `Controle transacional` utiliza como forma de segurança o **protocolo OAUTH**.
 Para acessá-la será necessário possuir: 
 
 1. Clientd
