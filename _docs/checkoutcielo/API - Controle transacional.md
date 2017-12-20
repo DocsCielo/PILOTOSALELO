@@ -33,13 +33,23 @@ O `Checkout_Cielo_Order_Number` é um identificado único gerado apenas quando o
 A API de `Controle transacional` utiliza como forma de segurança o **protocolo OAUTH**.
 Para acessá-la será necessário possuir: 
 
-1. Clientd
-2. ClientSecret
+| PROPRIEDADE    | DESCRIÇÃO                                                      | TIPO   |
+|----------------|----------------------------------------------------------------|--------|
+| `ClientId`     | Mesmo que o **MerchantId**                                     | guid   |
+| `ClientSecret` | Chave secreta que deverá ser obtida dentro do backoffice Cielo | string |
 
-| PROPRIEDADE  | DESCRIÇÃO                                         | TIPO   |
-|--------------|---------------------------------------------------|--------|
-| ClientId     | Mesmo que o **MerchantId**                        | guid   |
-| ClientSecret | Chave secreta que deverá ser obtida junto à Cielo | string |
+Para obter as credênciais de acesso a API, basta seguir o fluxo abaixo:
+
+1 - Acesso o Backoffice **Checkout Cielo**
+2 - Na aba **"Configurações"**, acesse a opção **"Dados cadastrais"** clique em **"Gerar Credenciais de acesso às APIs"** como na imagem abaixo
+
+![backoffice](http://moss-beaver.cloudvent.net/images/gerarcredenciais.png)
+
+3 - A mensagem abaixo será enviada para o **e-mail de contato tecnico**, contendo as credenciais de acesso:
+
+![e-mail](http://moss-beaver.cloudvent.net/images/emailcredencial.PNG)
+
+> Caso o botão de **"Gerar Credenciais de acesso às APIs"** não esteja disponivel em seu backoffice, acione a equipe de Produtos Cielo para a liberação da funcionalidade
 
 Para obter acesso aos serviços da API de controle transacional, será necessário obter um token de acesso, conforme os passos abaixo:
 
