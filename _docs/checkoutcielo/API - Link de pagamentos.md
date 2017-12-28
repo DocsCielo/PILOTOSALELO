@@ -68,7 +68,7 @@ Para obter as credênciais de acesso a API, basta seguir o fluxo abaixo:
 
 3 - A mensagem abaixo será enviada para o **e-mail de contato tecnico**, contendo as credenciais de acesso:
 
-![e-mail](http://moss-beaver.cloudvent.net/images/emailcredencial.PNG)
+![e-mail](http://moss-beaver.cloudvent.net/images/emailcredencial.png)
 
 > Caso o botão de **"Gerar Credenciais de acesso às APIs"** não esteja disponivel em seu backoffice, acione a equipe de Produtos Cielo para a liberação da funcionalidade
 
