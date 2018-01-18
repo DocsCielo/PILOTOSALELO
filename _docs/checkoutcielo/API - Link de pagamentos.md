@@ -148,18 +148,21 @@ Authorization: Bearer {access_token}
 **Requisição:**
 ```
 {
-   "Type":"Asset",
-   "name" : "Pedido ABC",
-   "description" : "50 canetas - R$30,00 | 10 cadernos - R$50,00",
-   "price": 8000,
-   "expirationDate": "2017-06-30",
-   "weight": 4500,
+   "Type":"Digital",
+   "name" : "Pedido",
+   "description" : "teste description",
+   "price":"1000000",
+   "weight": 2000000,
+   "ExpirationDate":"2037-06-19",
+   "maxNumberOfInstallments":"1",
+   "quantity": 2,
+   "Sku":"teste",
    "shipping":{
-     "type":"Correios",
-     "originZipCode": "06455030"
+     "type":"WithoutShipping",
+     "name": "teste",
+     "price":"1000000000"
    },
-   "SoftDescriptor" : "Pedido1234",
-   "maxNumberOfInstallments" : 2
+   "SoftDescriptor" : "Pedido1234"
 }
 ```
 
