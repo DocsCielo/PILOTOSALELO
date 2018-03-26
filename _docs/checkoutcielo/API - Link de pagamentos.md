@@ -91,7 +91,7 @@ Para obter acesso aos serviços da API de Gerenciamento de `Links de Pagamento`,
 
 **REQUISIÇÃO**
 ```
-"POST": https://cieloecommerce.cielo.com.br/v2/public/v2/token
+"POST": https://cieloecommerce.cielo.com.br/public/v2/token
 "Headers"
 "Authorization": Basic YjUyMWI2YjItYjliNC00YTMwLTg4MWQtM2I2M2RlY2UwMDA2OiAwOFFramU3OU53V1J4NUJkZ05Kc0lrQnVJVHQ1Y0lWTw
 ```
