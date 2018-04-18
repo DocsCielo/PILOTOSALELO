@@ -43,11 +43,11 @@ Para obter as credênciais de acesso a API, basta seguir o fluxo abaixo:
 1 - Acesso o Backoffice **Checkout Cielo**
 2 - Na aba **"Configurações"**, acesse a opção **"Dados cadastrais"** clique em **"Gerar Credenciais de acesso às APIs"** como na imagem abaixo
 
-![backoffice](http://moss-beaver.cloudvent.net/images/gerarcredenciais.png)
+![backoffice]({{ site.baseurl_root }}/images/gerarcredenciais.png)
 
 3 - A mensagem abaixo será enviada para o **e-mail de contato tecnico**, contendo as credenciais de acesso:
 
-![e-mail](http://moss-beaver.cloudvent.net/images/emailcredencial.png)
+![e-mail]({{ site.baseurl_root }}/images/emailcredencial.png)
 
 > Caso o botão de **"Gerar Credenciais de acesso às APIs"** não esteja disponivel em seu backoffice, acione a equipe de Produtos Cielo para a liberação da funcionalidade
 
